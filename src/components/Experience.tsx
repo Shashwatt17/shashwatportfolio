@@ -24,15 +24,13 @@ const Experience: React.FC = () => {
     {
       name: 'HT Digital Streams',
       location: 'New Delhi, India - Remote',
-      logo: 'HT',
+      logo: '<img src="https://i.ibb.co/Y7RQr6k0/HT-Media-1653576014631-1653576062159.jpg" alt="HT-Media-1653576014631-1653576062159" border="0">',
       roles: [
         {
           title: 'Technical Intern',
           period: 'Jul 2025 - Present',
           description: [
-            'Working on real-world projects involving cybersecurity and web systems',
-            'Developing scalable solutions for digital platforms',
-            'Collaborating with cross-functional teams on technical implementations'
+            'Working on real-world projects'
           ]
         }
       ]
@@ -40,7 +38,7 @@ const Experience: React.FC = () => {
     {
       name: 'Cyber Sentinel, UPES',
       location: 'Dehradun, India',
-      logo: 'CS',
+      logo: '<img src="https://i.ibb.co/21S3Whjt/download.jpg" alt="download" border="0">',
       roles: [
         {
           title: 'Associate Events Head',
@@ -74,7 +72,7 @@ const Experience: React.FC = () => {
     {
       name: 'Better Nutrition',
       location: 'Lucknow, India - On-site',
-      logo: 'BN',
+      logo: '<img src="https://i.ibb.co/gbJzG94f/download-2.png" alt="download-2" border="0">',
       roles: [
         {
           title: 'Summer Intern',
@@ -83,7 +81,6 @@ const Experience: React.FC = () => {
             'Led end-to-end web development and digital strategy',
             'Optimized blog content for SEO to increase organic traffic',
             'Managed Amazon & Flipkart listings to drive e-commerce growth',
-            'Implemented data-driven marketing strategies'
           ]
         }
       ]
@@ -100,7 +97,7 @@ const Experience: React.FC = () => {
             'Educated and empowered slum children through awareness programs',
             'Developed educational content and support materials',
             'Organized community outreach initiatives',
-            'Created impact measurement frameworks'
+            
           ]
         }
       ]
