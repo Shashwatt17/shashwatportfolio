@@ -24,7 +24,7 @@ const Experience: React.FC = () => {
     {
       name: 'HT Digital Streams',
       location: 'New Delhi, India - Remote',
-      logo: '<img src="https://i.ibb.co/Y7RQr6k0/HT-Media-1653576014631-1653576062159.jpg" alt="HT-Media-1653576014631-1653576062159" border="0">',
+      logo: "https://i.ibb.co/Y7RQr6k0/HT-Media-1653576014631-1653576062159.jpg"
       roles: [
         {
           title: 'Technical Intern',
@@ -38,7 +38,7 @@ const Experience: React.FC = () => {
     {
       name: 'Cyber Sentinel, UPES',
       location: 'Dehradun, India',
-      logo: '<img src="https://i.ibb.co/21S3Whjt/download.jpg" alt="download" border="0">',
+      logo: "https://i.ibb.co/21S3Whjt/download.jpg" 
       roles: [
         {
           title: 'Associate Events Head',
@@ -72,7 +72,7 @@ const Experience: React.FC = () => {
     {
       name: 'Better Nutrition',
       location: 'Lucknow, India - On-site',
-      logo: '<img src="https://i.ibb.co/gbJzG94f/download-2.png" alt="download-2" border="0">',
+      logo: "https://i.ibb.co/gbJzG94f/download-2.png" 
       roles: [
         {
           title: 'Summer Intern',
@@ -159,9 +159,19 @@ const Experience: React.FC = () => {
                             className="w-full justify-between p-0 h-auto hover:bg-transparent"
                           >
                             <div className="flex items-center space-x-4">
-                              <div className="w-12 h-12 bg-gradient-to-br from-cyber-green to-cyber-blue rounded-lg flex items-center justify-center font-bold text-sm">
-                                {company.logo}
-                              </div>
+                              <div className="w-12 h-12 flex-shrink-0">
+  {company.logo.startsWith('http') ? (
+    <img
+      src={company.logo}
+      alt={`${company.name} logo`}
+      className="w-full h-full object-contain rounded"
+    />
+  ) : (
+    <div className="w-12 h-12 bg-gradient-to-br from-cyber-green to-cyber-blue rounded-lg flex items-center justify-center font-bold text-sm text-white">
+      {company.logo}
+    </div>
+  )}
+</div>
                               <div className="text-left">
                                 <h3 className="text-xl font-semibold">{company.name}</h3>
                                 <div className="flex items-center text-sm text-muted-foreground mt-1">
