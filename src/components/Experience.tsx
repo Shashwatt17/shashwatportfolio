@@ -24,7 +24,7 @@ const Experience: React.FC = () => {
     {
       name: 'HT Digital Streams',
       location: 'New Delhi, India - Remote',
-      logo: "https://i.ibb.co/Y7RQr6k0/HT-Media-1653576014631-1653576062159.jpg"
+      logo: "https://i.ibb.co/Y7RQr6k0/HT-Media-1653576014631-1653576062159.jpg",
       roles: [
         {
           title: 'Technical Intern',
@@ -38,7 +38,7 @@ const Experience: React.FC = () => {
     {
       name: 'Cyber Sentinel, UPES',
       location: 'Dehradun, India',
-      logo: "https://i.ibb.co/21S3Whjt/download.jpg" 
+      logo: "https://i.ibb.co/21S3Whjt/download.jpg",
       roles: [
         {
           title: 'Associate Events Head',
@@ -72,7 +72,7 @@ const Experience: React.FC = () => {
     {
       name: 'Better Nutrition',
       location: 'Lucknow, India - On-site',
-      logo: "https://i.ibb.co/gbJzG94f/download-2.png" 
+      logo: "https://i.ibb.co/gbJzG94f/download-2.png",
       roles: [
         {
           title: 'Summer Intern',
