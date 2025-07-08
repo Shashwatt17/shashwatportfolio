@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from './ui/card';
 import { Shield, Code, Brain, Users } from 'lucide-react';
@@ -53,10 +52,14 @@ const About: React.FC = () => {
             <div className="relative">
               <div className="w-80 h-80 mx-auto relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-cyber-green to-cyber-blue rounded-2xl opacity-20 animate-pulse"></div>
-                <div className="absolute inset-4 bg-card rounded-xl neon-border flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="w-32 h-32 bg-gradient-to-br from-cyber-green to-cyber-blue rounded-full mx-auto mb-4 flex items-center justify-center text-4xl font-bold">
-                      ST
+                <div className="absolute inset-4 bg-card rounded-xl neon-border flex items-center justify-center overflow-hidden">
+                  <div className="text-center p-4">
+                    <div className="w-64 h-64 mx-auto mb-4 rounded-full overflow-hidden border-2 border-cyber-green/50">
+                      <img 
+                        src="https://i.ibb.co/Kgs5SPg/Whats-App-Image-2025-06-17-at-21-01-10-4bd00513.jpg" 
+                        alt="Shashwat Tripathi"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                     <p className="text-sm text-muted-foreground font-mono">SHASHWAT_TRIPATHI.JPG</p>
                   </div>
@@ -65,6 +68,7 @@ const About: React.FC = () => {
             </div>
           </div>
 
+          
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {skills.map((skill, index) => (
               <Card key={index} className="group hover:animate-glow transition-all duration-300 hover:border-cyber-green bg-card/50 backdrop-blur-sm">
