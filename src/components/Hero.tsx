@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Download, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from './ui/button';
@@ -27,8 +26,53 @@ const Hero: React.FC = () => {
   const handleResumeClick = () => {
     playHoverSound();
     setResumeClicks(prev => prev + 1);
-    // In a real app, this would download the actual resume
-    console.log('Resume download initiated');
+    
+    // Create a sample resume content
+    const resumeContent = `
+SHASHWAT TRIPATHI
+Cybersecurity Enthusiast | Web Developer | AI Explorer
+
+Email: tshashwat409@gmail.com
+LinkedIn: linkedin.com/in/shashwat-tripathi-
+GitHub: github.com/Shashwatt17
+
+EDUCATION
+B.Tech Computer Science & Engineering (Cybersecurity)
+University of Petroleum and Energy Studies (UPES)
+
+EXPERIENCE
+HT Digital Streams - Technical Intern (Jul 2025 - Present)
+• Working on real-world projects involving cybersecurity and web systems
+
+UPES Cyber Sentinel - Associate Events Head (May 2025 – Present)
+• Leading hackathons, workshops, and tech events
+
+Better Nutrition - Summer Intern (Jun 2023 – Jul 2023)
+• Led end-to-end web development and digital strategy
+• Optimized blog content for SEO
+
+PROJECTS
+• Intellicart - Smart multi-agent product recommendation system
+• Expense Splitter - Desktop app for group expense management
+• Phishing Email Detector - ML-based email security solution
+
+SKILLS
+• Cybersecurity & Network Security
+• Full-Stack Web Development
+• Machine Learning & AI
+• Event Management & Leadership
+    `;
+
+    // Create and download the resume as a text file
+    const blob = new Blob([resumeContent], { type: 'text/plain' });
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'Shashwat_Tripathi_Resume.txt';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    window.URL.revokeObjectURL(url);
   };
 
   const FloatingElements = () => (
